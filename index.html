@@ -8,18 +8,20 @@
     <title>Miguel Angel Ramirez </title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>    
+
+    
+
 </head>
 
 <body>
 <!--inicio de nav-->
-    <header class="hero">
+    <header class="hero header-scroll">
         <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">@miguelrami_dev</h2>
-            </div>
-
-            <ul class="nav__link nav__link--menu">
+            
+            <ul class="nav__link nav__link--menu menu-fijo">
                 <li class="nav__items">
                    <span> <a href="#" class="nav__links">Home</a></span>
                 </li>
@@ -36,7 +38,7 @@
                     <a href="#" class="nav__links">Blog</a>
                 </li>
                 <li class="nav__items">
-                    <a href="contact.html" class="nav__links">Contact</a>
+                    <a href="contact.html" target="_blank" class="nav__links">Contact</a>
                 </li>
                 
 
@@ -48,10 +50,10 @@
             </div>
         </nav>
 
-        <section class="hero__container container">
+        <section class="hero__container container wrapper">
             <h1 class="hero__title">Miguel Angel Ramírez</h1>
             <p class="hero__paragraph">Web Developer | Focused on Frontend | html, css, javascript, bootstrap, React.js, Node.js | Wordpress, Shopify</p>
-            <a href="#" class="cta">Contact me</a>
+            <a href="contact.html" target="_blank" class="cta">Contact me</a>
         </section>
     </header>
 <!--finalizacion de header-->
@@ -124,78 +126,20 @@
 
 <!--inicio de seccion de servicios-->
 
-        <section class="price container" id="services">
-            <h2 class="subtitle">Get the perfect plan for your web project</h2>
+        <section class="price container" >
+            <h2 class="subtitle">Portfolio</h2>
 
-            <div class="price__table">
-                <div class="price__element">
-                    <p class="price__name">From $80.00</p>
-                    <h3 class="price__price">Landing Page</h3>
-
-                    <div class="price__items">
-                        <p class="price__features">Layout and project design.</p>
-                        <p class="price__features">Attractive visual image according to each business, product or brand.</p>
-                        <p class="price__features">Content such as benefits, features and news of what you offer.</p>
-                        <p class="price__features">Contact form with registration of fundamental data.</p>
-                        <p class="price__features">Visible and eye-catching contact details.</p>
-                        <p class="price__features">Website adapted to mobile devices or smartphones.</p>
-                        <p class="price__features">Includes hosting service and domain for one year</p>
-                        <p class="price__features">SEO friendly</p>
-                    
-                        
-                    </div>
-
-                    <a href="#" class="price__cta">Learn more</a>
+            <figure class="tarjetas">
+                <div class="tarjetas__contenido">
+                  <div class="tarjetas__elemento"><a href="#"><img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/872485/coldchase.jpg"><h1>Elemento 1</a></h1></div>
+                  <div class="tarjetas__elemento"><h1>Elemento 2</h1></div>
+                  <div class="tarjetas__elemento"><h1>Elemento 3</h1></div>
                 </div>
+              </figure> 
 
-
-                <div class="price__element price__element--best">
-                    <p class="price__name">From $180.00</p>
-                    <h3 class="price__price">Web Page</h3>
-
-                    <div class="price__items">
-                        <p class="price__features">Custom web design according to your brand</p>
-                        <p class="price__features">Hosting and Domain</p>
-                        <p class="price__features">Site Adaptable to Mobile Devices</p>
-                        <p class="price__features">CMS system to manage your site</p>
-                        <p class="price__features">Integration with Social Networks</p>
-                        <p class="price__features">Contact or quote form</p>
-                        <p class="price__features">Self-Managed System</p>
-                        <p class="price__features">Indexing in (Google, Yahoo and Bing)</p>
-                        <p class="price__features">Training and technical support</p>
-                        <p class="price__features">Includes hosting service and domain for one year</p>
-                        <p class="price__features">SEO friendly</p>
-                    </div>
-
-                    <a href="#" class="price__cta">Learn more</a>
-                </div>
-
-
-                <div class="price__element">
-                    <p class="price__name">From $230.00</p>
-                    <h3 class="price__price">e-commerce</h3>
-
-                    <div class="price__items">
-                        <p class="price__features">Diseño web a medida</p>
-                        <p class="price__features">Payment gateway (Choice by the client)</p>
-                        <p class="price__features">Multi language</p>
-                        <p class="price__features">Powerful catalog</p>
-                        <p class="price__features">Statistics</p>
-                        <p class="price__features">Dynamic banner</p>
-                        <p class="price__features">100% Manageable</p>
-                        <p class="price__features">Products (Description and photos)</p>
-                        <p class="price__features">Links to social networks</p>
-                        <p class="price__features">News blog</p>
-                        <p class="price__features">SEO friendly</p>
-                        <p class="price__features">Includes hosting and domain service for one year</p>
-                        <p class="price__features">Training and technical support</p>
-                    </div>
-
-                    <a href="#" class="price__cta">Learn more</a>
-                </div>
-
-
-            </div>
+    
+   
+            
         </section>
 <!--finalizacion de seccion de servicios-->
 
@@ -358,7 +302,7 @@
 
                 
                 <p class="questions__copy">Request a personalized consultation by whatsapp, telegram or zoom of 30 minutes completely free, so that we can speak personally and thus resolve all your doubts and take the opportunity to quote your web project.</p>
-                <a href="#" class="cta_get">Get in touch now</a>
+                <a href="contact.html" target="_blank" class="cta_get">Get in touch now</a>
             </section>
         </section>
 
@@ -390,7 +334,7 @@
                         <a href="#" class="nav__links">Blog</a>
                     </li>
                     <li class="nav__items">
-                        <a href="contact.html" class="nav__links">Contact</a>
+                        <a href="contact.html" target="_blank" class="nav__links">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -417,6 +361,32 @@
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    posicionarMenu();
+    
+    $(window).scroll(function() {    
+        posicionarMenu();
+    });
+    
+    function posicionarMenu() {
+        var altura_del_header = $('.header-scroll').outerHeight(true);
+        var altura_del_menu = $('.menu-fijo').outerHeight(true);
+    
+        if ($(window).scrollTop() >= altura_del_header){
+            $('.menu-fijo').addClass('fixed');
+            $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
+        } else {
+            $('.menu-fijo').removeClass('fixed');
+            $('.wrapper').css('margin-top', '0');
+        }
+    }
+    
+    </script>
+
+
+
 </body>
 
 </html>
